@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+.container {
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "first third"
+  "second third"
+  "fourth fifth";
+  grid-gap: 20px;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project1 {
+  background: red;
+  grid-area: first;
+}
+
+.project2 {
+  background: aqua;
+  grid-area: second;
+}
+
+.project3 {
+  background: blue;
+  grid-area: third;
+}
+
+.project4 {
+  background: pink;
+  grid-area: fourth;
+}
+
+.project5 {
+  background: olive;
+  grid-area: fifth;
+}
+
+
